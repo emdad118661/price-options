@@ -17,14 +17,15 @@ const BarCharts = () => {
     
     return (
         <div>
-           <LineChart width={500} height={400} data={subjectMarksData}>
+           <LineChart width={1100} height={600} data={subjectMarksData}>
             <XAxis dataKey="name"/>
             <YAxis></YAxis>
             <Line dataKey="math" stroke="red"></Line>
-            <Line dataKey="physics" stroke="purple"></Line>
+            <Line dataKey="physics" stroke="green"></Line>
             <Line dataKey="chemistry" stroke="orange"></Line>
-
            </LineChart>
+
+
         </div>
     );
 };
